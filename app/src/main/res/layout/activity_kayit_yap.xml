@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register"
+    tools:context="com.example.java_oglen.urunyonetimi.KayitYap">
+
+    <TextView
+        android:id="@+id/ADINIZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="92dp"
+        android:text="ADINIZ" />
+
+    <EditText
+        android:id="@+id/txadınız"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ADINIZ"
+        android:layout_alignBottom="@+id/ADINIZ"
+        android:layout_alignStart="@+id/editText2"
+        android:ems="10"
+
+        android:hint="ADINIZ"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ADINIZ"
+        android:layout_below="@+id/txadınız"
+        android:textSize="18dp"
+        android:layout_marginTop="17dp"
+        android:text="SOYADINIZ" />
+
+    <EditText
+
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txadınız"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:ems="10"
+        android:hint="SOYADINIZ"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="17dp"
+        android:text="EMAİL"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/txemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText2"
+        android:layout_alignTop="@+id/textView5"
+        android:ems="10"
+        android:hint="EMAİL"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txemail"
+        android:layout_below="@+id/txemail"
+        android:layout_marginTop="89dp"
+        android:text="KAYDET" />
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/txemail"
+        android:layout_marginTop="44dp"
+        android:text="ŞİFRE" />
+
+    <EditText
+        android:id="@+id/txsifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button3"
+        android:layout_below="@+id/txemail"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:textSize="18dp"
+
+        android:hint="ŞİFRE"
+        android:inputType="textPersonName" />
+</RelativeLayout>
