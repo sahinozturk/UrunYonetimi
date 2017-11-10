@@ -29,10 +29,9 @@
         <activity android:name=".UrunList" />
         <!-- <activity android:name=".UrunAyrinti" android:parentActivityName=".UrunList" /> -->
         <activity android:name=".UrunAyrinti" />
-        <activity android:name=".KullaniciGiris" />
         <activity android:name=".KayitYap" />
-
-        <activity android:name=".FavoriUrunlerSayfasi"></activity>
+        <activity android:name=".FavoriUrunlerSayfasi" />
+        <activity android:name=".GirisEkrani"></activity>
     </application>
 
 </manifest>

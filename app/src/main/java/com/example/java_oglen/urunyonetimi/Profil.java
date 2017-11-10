@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.TextView;
 
 
 /**
@@ -20,6 +21,7 @@ import android.widget.ListView;
  */
 public class Profil extends Fragment {
 ListView lvs;
+    TextView tvad,tvsoyad,tvmail,tvsifre,tvad2;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -62,6 +64,23 @@ ListView lvs;
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+/*
+        Bundle extras=getIntent().getExtras();
+        tvad=(TextView)findViewById(R.id.txadınız);
+        tvmail=(TextView)findViewById(R.id.txemail);
+        tvsoyad=(TextView)findViewById(R.id.txsoyadi);
+        tvsifre=(TextView)findViewById(R.id.txsifre);
+        String valuemail=extras.getString("mail");
+        String valuesifre=extras.getString("kisitelefon");
+        String valuekisiadi=extras.getString("kisiadi");
+        String valuekisisoyadi=extras.getString("kisisoyadi");
+        tvad.setText(valuekisiadi);
+        tvsoyad.setText(valuekisisoyadi);
+        tvsifre.setText(valuesifre);
+        tvmail.setText(valuemail);
+*/
+
+
     }
 
     @Override
@@ -95,16 +114,7 @@ ListView lvs;
         mListener = null;
     }
 
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
+
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);

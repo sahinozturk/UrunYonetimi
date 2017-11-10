@@ -127,9 +127,10 @@ public class UrunAyrinti extends AppCompatActivity implements BaseSliderView.OnS
                 //Eğer kullanıcı girişi yapmamışsa favori özzelliğini kullanamasın kullanıcı giriş sayfasına girsin
                 if(kid.equals("1"))
                 {
-                    Intent i =  new Intent(UrunAyrinti.this, KullaniciGiris.class);
-                    startActivity(i);
+                    Intent i =  new Intent(UrunAyrinti.this, GirisEkrani.class);
                     finish();
+                    startActivity(i);
+
                 }
                 else
                 {
